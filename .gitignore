@@ -1,6 +1,13 @@
-*.pyc
-__pycache__
-myvenv
-db.sqlite3
-/static
-.DS_Store
+"""mysite URL Configuration
+
+
+[...]
+"""
+
+from django.conf.urls import url
+from django.contrib import admin
+
+urlpatterns = [
+  url(r'^admin/' , admin.site.urls') ,
+  ]
+  
